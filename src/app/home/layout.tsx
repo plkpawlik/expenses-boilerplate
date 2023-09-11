@@ -1,12 +1,9 @@
-import { Footer } from "./widgets/footer";
-import { Header } from "./widgets/header";
+import { Footer } from "./layout.footer";
+import { Header } from "./layout.header";
 
 export default function (props: React.PropsWithChildren) {
-	// component logic
-
-	// component layout
 	return (
-		<main className="flex flex-col items-stretch justify-between w-full h-full">
+		<main className="flex h-full w-full flex-col flex-nowrap items-stretch justify-between">
 			<Header />
 			{props.children}
 			<Footer />

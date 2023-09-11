@@ -2,5 +2,5 @@ export default function () {
 	// component logic
 
 	// component layout
-	return <h2 className="m-auto">Updates</h2>;
+	return <h2>Home</h2>;
 }
