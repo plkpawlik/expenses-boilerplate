@@ -4,5 +4,5 @@ export default function () {
 	// component logic
 
 	// component layout
-	return redirect("/home");
+	return redirect("/home/ledgers");
 }

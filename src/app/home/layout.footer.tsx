@@ -10,10 +10,10 @@ export function Footer() {
 	// component layout
 	return (
 		<footer className="navbar flex-nowrap gap-2 border-t pb-6">
-			<ButtonBottomNav href="#" icon={MdEditCalendar} />
-			<ButtonBottomNav href="#" icon={MdInsertChart} />
-			<ButtonBottomNav href="#" icon={MdNotifications} />
-			<ButtonBottomNav href="#" icon={MdPerson} />
+			<ButtonBottomNav href="/home/ledgers" icon={MdEditCalendar} />
+			<ButtonBottomNav href="/home/reports" icon={MdInsertChart} />
+			<ButtonBottomNav href="/home/updates" icon={MdNotifications} />
+			<ButtonBottomNav href="/home/account" icon={MdPerson} />
 		</footer>
 	);
 }
