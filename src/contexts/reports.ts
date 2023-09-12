@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { BillInfo } from "./types/bill.info";
 
-export const useLedgersContext = create<{
+export const useReportsContext = create<{
 	list: BillInfo[];
 }>(() => ({
 	list: [

@@ -1,19 +1,23 @@
 "use client";
 
+import { useReportsContext } from "@/contexts/reports";
 import { ViewHome } from "@/widgets/view/view.home";
 import { useState } from "react";
-import { InputMonth } from "./page.input-month";
+import { Stepper } from "./page.stepper";
+import { Summary } from "./page.summary";
 
 export default function () {
 	// component hooks
-	const [date, setDate] = useState(new Date());
+	const reports = useReportsContext();
 
 	// component logic
+	const [date, setDate] = useState(new Date());
 
 	// component layout
 	return (
-		<ViewHome className="flex flex-col items-stretch gap-2 p-2">
-			<InputMonth update={setDate} value={date} />
+		<ViewHome className="flex flex-col items-stretch">
+			<Stepper update={setDate} value={date} />
+			<Summary bills={reports.list} date={date} />
 		</ViewHome>
 	);
 }

@@ -1,17 +1,15 @@
 import { addMonths, format, subMonths } from "date-fns";
-
-// icons
 import { IconType } from "react-icons";
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
-export function InputMonth(props: { update(value: Date): void; value: Date }) {
+export function Stepper(props: { update(value: Date): void; value: Date }) {
 	// component logic
 	const goNextMonth = () => props.update(addMonths(props.value, 1));
 	const goPrevMonth = () => props.update(subMonths(props.value, 1));
 
 	// component layout
 	return (
-		<div className="join flex flex-nowrap">
+		<div className="join sticky top-0 flex flex-nowrap bg-base-100 p-2">
 			<ButtonJoin action={goPrevMonth} icon={MdOutlineKeyboardArrowLeft} />
 			<InputJoin update={props.update} value={props.value} />
 			<ButtonJoin action={goNextMonth} icon={MdOutlineKeyboardArrowRight} />

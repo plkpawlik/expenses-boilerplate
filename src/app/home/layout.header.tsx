@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-// icons
 import { IconType } from "react-icons";
 import { MdMoreVert, MdPerson, MdSearch, MdSecurity, MdSettings } from "react-icons/md";
 

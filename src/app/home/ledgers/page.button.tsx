@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-// icons
 import { MdAdd } from "react-icons/md";
 
 export function Button() {

@@ -1,11 +1,8 @@
 import Link from "next/link";
 
-// icons
-import { MdOutlineForum } from "react-icons/md";
-
-// types
 import { BillInfo } from "@/contexts/types/bill.info";
 import { formatDistance } from "date-fns";
+import { MdOutlineForum } from "react-icons/md";
 
 export function Preview(props: { bills: BillInfo[] }) {
 	// component logic

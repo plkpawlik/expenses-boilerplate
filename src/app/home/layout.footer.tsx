@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-// icons
 import { IconType } from "react-icons";
 import { MdEditCalendar, MdInsertChart, MdNotifications, MdPerson } from "react-icons/md";
 

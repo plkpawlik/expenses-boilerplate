@@ -1,4 +1,3 @@
-// types
 import { BillInfo } from "@/contexts/types/bill.info";
 import { MdFavoriteBorder } from "react-icons/md";
 
@@ -27,6 +26,8 @@ function summarize(bills: BillInfo[], userID: string): number {
 
 	for (const bill of bills) {
 		for (const yyyyMM of Object.keys(bill.balance)) {
+			if (!bill.balance[yyyyMM][userID]) continue;
+
 			balance += bill.balance[yyyyMM][userID];
 		}
 	}
