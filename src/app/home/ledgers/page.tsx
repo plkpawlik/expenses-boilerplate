@@ -1,19 +1,20 @@
 "use client";
 
-import { InputMonth } from "@/widgets/input/input.month";
-import { PageWrapper } from "@/widgets/page/page.wrapper";
-import { useState } from "react";
+import { useLedgersContext } from "@/contexts/ledgers";
+import { ViewHome } from "@/widgets/view/view.home";
+import { Preview } from "./page.preview";
 
 export default function () {
 	// component hooks
-	const [date, setDate] = useState(new Date());
+	const ledgers = useLedgersContext();
 
 	// component logic
 
 	// component layout
 	return (
-		<PageWrapper className="flex flex-col items-stretch gap-2 p-2">
-			<InputMonth update={setDate} value={date} />
-		</PageWrapper>
+		<ViewHome className="flex flex-col items-stretch">
+			<div className="m-2 bg-red-500 p-32" />
+			<Preview bills={ledgers.list} />
+		</ViewHome>
 	);
 }

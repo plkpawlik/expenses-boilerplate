@@ -1,6 +1,6 @@
 import { ClassNameValue, twMerge } from "tailwind-merge";
 
-export function PageWrapper(
+export function ViewHome(
 	props: React.PropsWithChildren & {
 		className: ClassNameValue;
 	},
