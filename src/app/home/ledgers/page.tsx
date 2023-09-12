@@ -2,7 +2,9 @@
 
 import { useLedgersContext } from "@/contexts/ledgers";
 import { ViewHome } from "@/widgets/view/view.home";
+import { Button } from "./page.button";
 import { Preview } from "./page.preview";
+import { Summary } from "./page.summary";
 
 export default function () {
 	// component hooks
@@ -13,8 +15,9 @@ export default function () {
 	// component layout
 	return (
 		<ViewHome className="flex flex-col items-stretch">
-			<div className="m-2 bg-red-500 p-32" />
+			<Summary bills={ledgers.list} />
 			<Preview bills={ledgers.list} />
+			<Button />
 		</ViewHome>
 	);
 }

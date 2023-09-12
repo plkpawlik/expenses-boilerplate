@@ -28,7 +28,7 @@ export function Preview(props: { bills: BillInfo[] }) {
 							{label(bill.members.length)}
 						</p>
 					</div>
-					<PreviewSummary bill={bill} />
+					<PreviewPeriod bill={bill} />
 				</Link>
 			))}
 		</div>
@@ -40,18 +40,18 @@ function PreviewAvatar(props: { bill: BillInfo }) {
 
 	// component layout
 	return (
-		<div className="avatar rounded-full bg-primary p-3">
+		<div className="avatar rounded-full bg-base-content p-3">
 			<MdOutlineForum className="text-xl text-base-100" />
 		</div>
 	);
 }
 
-function PreviewSummary(props: { bill: BillInfo }) {
+function PreviewPeriod(props: { bill: BillInfo }) {
 	// component logic
 
 	// component layout
 	return (
-		<div className="badge badge-ghost badge-sm py-2 normal-case">
+		<div className="badge badge-ghost badge-sm normal-case">
 			{formatDistance(new Date(props.bill.timestampUpdated), new Date())}
 		</div>
 	);
