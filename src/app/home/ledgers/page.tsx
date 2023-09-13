@@ -1,7 +1,10 @@
 "use client";
 
+// @root
+import { ViewHome } from "@/components/view/view.home";
 import { useLedgersContext } from "@/contexts/ledgers";
-import { ViewHome } from "@/widgets/view/view.home";
+
+// @view
 import { Button } from "./page.button";
 import { Preview } from "./page.preview";
 import { Summary } from "./page.summary";

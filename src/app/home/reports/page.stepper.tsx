@@ -1,4 +1,7 @@
+// @node
 import { addMonths, format, subMonths } from "date-fns";
+
+// @icon
 import { IconType } from "react-icons";
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -34,7 +37,7 @@ function ButtonJoin(props: { action(): void; icon: IconType }) {
 
 function InputJoin(props: { update(value: Date): void; value: Date }) {
 	// component logic
-	const formated = format(props.value, "yyyy-MM");
+	const formatedDate = format(props.value, "yyyy-MM");
 
 	// component layout
 	return (
@@ -42,7 +45,7 @@ function InputJoin(props: { update(value: Date): void; value: Date }) {
 			onChange={(e) => props.update(new Date(e.target.value))}
 			className="input join-item input-bordered input-sm flex-1"
 			type="month"
-			value={formated}
+			value={formatedDate}
 		/>
 	);
 }

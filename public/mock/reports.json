@@ -1,0 +1,258 @@
+[
+	{
+		"id": "bill1",
+		"members": ["user1", "user2", "user3"],
+		"balance": {
+			"2023-01": {
+				"user1": 50,
+				"user2": 20,
+				"user3": 30
+			},
+			"2023-02": {
+				"user1": 10,
+				"user2": 5,
+				"user3": 5
+			},
+			"2023-03": {
+				"user1": 15,
+				"user2": 25,
+				"user3": 10
+			},
+			"2023-04": {
+				"user1": 5,
+				"user2": 10,
+				"user3": 15
+			},
+			"2023-05": {
+				"user1": 5,
+				"user2": 10,
+				"user3": 5
+			},
+			"2023-06": {
+				"user1": 20,
+				"user2": 15,
+				"user3": 10
+			},
+			"2023-07": {
+				"user1": 10,
+				"user2": 10,
+				"user3": 5
+			},
+			"2023-08": {
+				"user1": 10,
+				"user2": 5,
+				"user3": 15
+			}
+		},
+		"timestampCreated": "2023-01-15T08:30:00.000Z",
+		"timestampUpdated": "2023-09-30T12:30:00.000Z",
+		"timestampValidTo": "2023-08-31T23:59:59.999Z",
+		"title": "Shared Expenses"
+	},
+	{
+		"id": "bill2",
+		"members": ["user2", "user4", "user5"],
+		"balance": {
+			"2023-02": {
+				"user2": 25,
+				"user4": 15,
+				"user5": 10
+			},
+			"2023-03": {
+				"user2": 10,
+				"user4": 5,
+				"user5": 5
+			},
+			"2023-04": {
+				"user2": 20,
+				"user4": 30,
+				"user5": 15
+			},
+			"2023-05": {
+				"user2": 5,
+				"user4": 10,
+				"user5": 15
+			}
+		},
+		"timestampCreated": "2023-02-05T14:15:00.000Z",
+		"timestampUpdated": "2023-08-15T09:30:00.000Z",
+		"timestampValidTo": "2023-06-15T23:59:59.999Z",
+		"title": "Grocery Split"
+	},
+	{
+		"id": "bill3",
+		"members": ["user3", "user4"],
+		"balance": {
+			"2023-03": {
+				"user3": 10,
+				"user4": 20
+			},
+			"2023-04": {
+				"user3": 5,
+				"user4": 10
+			},
+			"2023-05": {
+				"user3": 15,
+				"user4": 25
+			},
+			"2023-06": {
+				"user3": -5,
+				"user4": 5
+			}
+		},
+		"timestampCreated": "2023-03-01T11:45:00.000Z",
+		"timestampUpdated": "2023-09-01T18:00:00.000Z",
+		"timestampValidTo": "2023-05-31T23:59:59.999Z",
+		"title": "Rent Split"
+	},
+	{
+		"id": "bill4",
+		"members": ["user1", "user5"],
+		"balance": {
+			"2023-04": {
+				"user1": 20,
+				"user5": 5
+			},
+			"2023-05": {
+				"user1": 10,
+				"user5": 10
+			},
+			"2023-06": {
+				"user1": 15,
+				"user5": 20
+			},
+			"2023-07": {
+				"user1": -5,
+				"user5": 10
+			}
+		},
+		"timestampCreated": "2023-04-01T16:30:00.000Z",
+		"timestampUpdated": "2023-07-01T09:45:00.000Z",
+		"timestampValidTo": "2023-07-31T23:59:59.999Z",
+		"title": "Utilities"
+	},
+	{
+		"id": "bill5",
+		"members": ["user2", "user3"],
+		"balance": {
+			"2023-05": {
+				"user2": 10,
+				"user3": 5
+			},
+			"2023-06": {
+				"user2": 5,
+				"user3": 10
+			},
+			"2023-07": {
+				"user2": 15,
+				"user3": 20
+			},
+			"2023-08": {
+				"user2": 15,
+				"user3": 5
+			}
+		},
+		"timestampCreated": "2023-05-01T09:00:00.000Z",
+		"timestampUpdated": "2023-08-01T14:20:00.000Z",
+		"timestampValidTo": "2023-08-31T23:59:59.999Z",
+		"title": "Dinner Out"
+	},
+	{
+		"id": "bill6",
+		"members": ["user4", "user5"],
+		"balance": {
+			"2023-06": {
+				"user4": 10,
+				"user5": 15
+			},
+			"2023-07": {
+				"user4": 5,
+				"user5": 10
+			},
+			"2023-08": {
+				"user4": 20,
+				"user5": 25
+			},
+			"2023-09": {
+				"user4": 5,
+				"user5": 10
+			}
+		},
+		"timestampCreated": "2023-06-01T13:15:00.000Z",
+		"timestampUpdated": "2023-09-01T10:30:00.000Z",
+		"timestampValidTo": "2023-09-30T23:59:59.999Z",
+		"title": "Movie Night"
+	},
+	{
+		"id": "bill7",
+		"members": ["user1", "user2"],
+		"balance": {
+			"2023-07": {
+				"user1": 30,
+				"user2": 10
+			},
+			"2023-08": {
+				"user1": 15,
+				"user2": 20
+			},
+			"2023-09": {
+				"user1": 25,
+				"user2": 30
+			}
+		},
+		"timestampCreated": "2023-07-01T18:45:00.000Z",
+		"timestampUpdated": "2023-09-01T15:15:00.000Z",
+		"timestampValidTo": "2023-09-30T23:59:59.999Z",
+		"title": "Weekend Trip"
+	},
+	{
+		"id": "bill8",
+		"members": ["user3", "user5"],
+		"balance": {
+			"2023-08": {
+				"user3": 10,
+				"user5": 20
+			},
+			"2023-09": {
+				"user3": 15,
+				"user5": 10
+			}
+		},
+		"timestampCreated": "2023-08-01T10:00:00.000Z",
+		"timestampUpdated": "2023-09-15T13:45:00.000Z",
+		"timestampValidTo": "2023-09-30T23:59:59.999Z",
+		"title": "Gym Membership"
+	},
+	{
+		"id": "bill9",
+		"members": ["user1", "user4"],
+		"balance": {
+			"2023-09": {
+				"user1": 15,
+				"user4": 10
+			}
+		},
+		"timestampCreated": "2023-09-01T08:15:00.000Z",
+		"timestampUpdated": "2023-09-30T16:30:00.000Z",
+		"timestampValidTo": "2023-09-30T23:59:59.999Z",
+		"title": "Internet Bill"
+	},
+	{
+		"id": "bill10",
+		"members": ["user2", "user5"],
+		"balance": {
+			"2023-08": {
+				"user2": 10,
+				"user5": 15
+			},
+			"2023-09": {
+				"user2": 5,
+				"user5": 10
+			}
+		},
+		"timestampCreated": "2023-09-15T14:30:00.000Z",
+		"timestampUpdated": "2023-09-30T11:00:00.000Z",
+		"timestampValidTo": "2023-09-30T23:59:59.999Z",
+		"title": "Book Club"
+	}
+]

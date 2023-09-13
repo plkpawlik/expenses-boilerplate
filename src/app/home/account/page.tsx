@@ -1,4 +1,5 @@
-import { ViewHome } from "@/widgets/view/view.home";
+// @root
+import { ViewHome } from "@/components/view/view.home";
 
 export default function () {
 	// component logic

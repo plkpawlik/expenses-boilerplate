@@ -1,5 +1,7 @@
+// @next
 import Link from "next/link";
 
+// @icon
 import { IconType } from "react-icons";
 import { MdEditCalendar, MdInsertChart, MdNotifications, MdPerson } from "react-icons/md";
 

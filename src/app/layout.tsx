@@ -1,4 +1,7 @@
+// @next
 import { Metadata } from "next";
+
+// @style
 import "./layout.css";
 
 export const metadata: Metadata = {

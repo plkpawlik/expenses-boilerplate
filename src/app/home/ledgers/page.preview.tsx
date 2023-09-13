@@ -1,8 +1,14 @@
+// @next
 import Link from "next/link";
 
-import { BillInfo } from "@/contexts/types/bill.info";
+// @node
 import { formatDistance } from "date-fns";
+
+// @icon
 import { MdOutlineForum } from "react-icons/md";
+
+// @root
+import { BillInfo } from "@/types/bill.info";
 
 export function Preview(props: { bills: BillInfo[] }) {
 	// component logic
@@ -17,7 +23,11 @@ export function Preview(props: { bills: BillInfo[] }) {
 	return (
 		<div className="join join-vertical rounded-none">
 			{props.bills.map((bill) => (
-				<Link href="#" className="btn btn-ghost join-item flex-1 flex-nowrap gap-2 p-2">
+				<Link
+					key={bill.id}
+					href="#"
+					className="btn btn-ghost join-item flex-1 flex-nowrap gap-2 p-2"
+				>
 					<PreviewAvatar bill={bill} />
 					<div className="flex-1 overflow-hidden font-normal normal-case">
 						<p className="truncate text-start text-lg">{bill.title}</p>
