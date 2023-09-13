@@ -8,11 +8,11 @@ import { useMemo } from "react";
 import { MdOutlineForum } from "react-icons/md";
 
 // @root
-import { getUserSummary } from "@/tools/dissect.bill";
+import { getUserMonthly } from "@/tools/dissect.bill";
 import { formatNumber } from "@/tools/format";
 import { BillInfo } from "@/types/bill.info";
 
-export function Preview(props: { bills: BillInfo[] }) {
+export function Preview(props: { bills: BillInfo[]; date: Date }) {
 	// component logic
 	const label = (members: number): string => {
 		if (members === 1) return "Only you";
@@ -37,7 +37,7 @@ export function Preview(props: { bills: BillInfo[] }) {
 							{label(bill.members.length)}
 						</p>
 					</div>
-					<PreviewSummary bill={bill} />
+					<PreviewSummary bill={bill} date={props.date} />
 				</Link>
 			))}
 		</div>
@@ -55,11 +55,14 @@ function PreviewAvatar(props: { bill: BillInfo }) {
 	);
 }
 
-function PreviewSummary(props: { bill: BillInfo }) {
+function PreviewSummary(props: { bill: BillInfo; date: Date }) {
 	// component logic
-	const sumSpend = useMemo(() => getUserSummary(props.bill, "user1"), [props.bill]);
+	const sumSpend = useMemo(
+		() => getUserMonthly(props.bill, "user1", props.date),
+		[props.bill, props.date],
+	);
 	const formated = formatNumber(sumSpend);
 
 	// component layout
-	return <p className="text-xl font-bold text-primary">{formated} $</p>;
+	return <p className="text-xl font-bold text-secondary">{formated} $</p>;
 }

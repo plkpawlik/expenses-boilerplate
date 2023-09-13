@@ -6,14 +6,17 @@ import { useMemo, useState } from "react";
 
 // @root
 import { ViewHome } from "@/components/view/view.home";
+import { useLedgersContext } from "@/contexts/ledgers";
 import { useReportsContext } from "@/contexts/reports";
 
 // @view
+import { Preview } from "./page.preview";
 import { Stepper } from "./page.stepper";
 import { Summary } from "./page.summary";
 
 export default function () {
 	// component hooks
+	const ledgers = useLedgersContext();
 	const reports = useReportsContext();
 
 	// component logic
@@ -21,8 +24,11 @@ export default function () {
 
 	const formatedDate = format(date, "yyyy-MM");
 	const filteredList = useMemo(
-		() => reports.list.filter((report) => report.balance[formatedDate]),
-		[date, reports],
+		() => [
+			...reports.list.filter((report) => report.balance[formatedDate]),
+			...ledgers.list.filter((report) => report.balance[formatedDate]),
+		],
+		[date, ledgers.list, reports.list],
 	);
 
 	// component layout
@@ -30,6 +36,7 @@ export default function () {
 		<ViewHome className="flex flex-col items-stretch">
 			<Stepper update={setDate} value={date} />
 			<Summary bills={filteredList} date={date} />
+			<Preview bills={filteredList} date={date} />
 		</ViewHome>
 	);
 }

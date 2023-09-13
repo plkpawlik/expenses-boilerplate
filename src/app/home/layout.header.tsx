@@ -66,7 +66,7 @@ function DropdownMenu(props: {
 			</label>
 			<ul
 				tabIndex={0}
-				className="menu dropdown-content rounded-box z-10 mt-2 w-36 bg-base-100 p-2 shadow"
+				className="menu dropdown-content rounded-box z-20 mt-2 w-36 bg-base-100 p-2 shadow"
 			>
 				{props.items.map((item) => (
 					<li>

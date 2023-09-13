@@ -12,7 +12,7 @@ export function Stepper(props: { update(value: Date): void; value: Date }) {
 
 	// component layout
 	return (
-		<div className="join sticky top-0 flex flex-nowrap bg-base-100 p-2">
+		<div className="join sticky top-0 z-10 flex flex-nowrap bg-base-100 p-2">
 			<ButtonJoin action={goPrevMonth} icon={MdOutlineKeyboardArrowLeft} />
 			<InputJoin update={props.update} value={props.value} />
 			<ButtonJoin action={goNextMonth} icon={MdOutlineKeyboardArrowRight} />
