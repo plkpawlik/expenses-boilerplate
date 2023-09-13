@@ -2,7 +2,7 @@
 
 // @node
 import { format } from "date-fns";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 // @root
 import { ViewHome } from "@/components/view/view.home";
@@ -30,6 +30,11 @@ export default function () {
 		],
 		[date, ledgers.list, reports.list],
 	);
+
+	useEffect(() => {
+		ledgers.load();
+		reports.load();
+	}, []);
 
 	// component layout
 	return (

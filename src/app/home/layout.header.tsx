@@ -69,7 +69,7 @@ function DropdownMenu(props: {
 				className="menu dropdown-content rounded-box z-20 mt-2 w-36 bg-base-100 p-2 shadow"
 			>
 				{props.items.map((item) => (
-					<li>
+					<li key={item.text}>
 						<Link href={item.href}>
 							<item.icon className="mr-2 text-lg" />
 							{item.text}

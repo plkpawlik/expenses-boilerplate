@@ -1,5 +1,8 @@
 "use client";
 
+// @node
+import { useEffect } from "react";
+
 // @root
 import { ViewHome } from "@/components/view/view.home";
 import { useLedgersContext } from "@/contexts/ledgers";
@@ -14,6 +17,9 @@ export default function () {
 	const ledgers = useLedgersContext();
 
 	// component logic
+	useEffect(() => {
+		ledgers.load();
+	}, []);
 
 	// component layout
 	return (
