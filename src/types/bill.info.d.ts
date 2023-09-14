@@ -1,12 +1,9 @@
-import { ID } from "./util/id";
+import { BillBalance } from "./util/bill.balance";
+import { DocumentID } from "./util/document.id";
 
-export interface BillInfo extends ID {
+export interface BillInfo extends DocumentID {
+	balance: BillBalance;
 	members: string[];
-	balance: {
-		[yyyyMM: string]: {
-			[userID: string]: number;
-		};
-	};
 	timestampCreated: Date;
 	timestampUpdated: Date;
 	timestampValidTo: Date;
