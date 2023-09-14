@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // @icon
 import { IconType } from "react-icons";
-import { MdMoreVert, MdPerson, MdSearch, MdSecurity, MdSettings } from "react-icons/md";
+import { MdArrowBackIosNew, MdAutoFixHigh, MdBarChart, MdMoreVert } from "react-icons/md";
 
 export function Header() {
 	// component logic
@@ -12,39 +12,28 @@ export function Header() {
 	return (
 		<header className="navbar flex-nowrap justify-between gap-2">
 			<div className="flex flex-nowrap gap-2">
-				<ButtonAvatar href="#" />
-				<span className="text-lg">Home</span>
+				<ButtonGoHome href="/home/ledgers" />
+				<span className="text-lg">Chat</span>
 			</div>
 			<nav className="flex flex-nowrap gap-2">
-				<ButtonSearch href="#" />
 				<DropdownMenu
 					items={[
-						{ href: "#", icon: MdSecurity, text: "Security" },
-						{ href: "#", icon: MdSettings, text: "Settings" },
+						{ href: "#", icon: MdAutoFixHigh, text: "Options" },
+						{ href: "#", icon: MdBarChart, text: "Summary" },
 					]}
 				/>
 			</nav>
 		</header>
 	);
 }
-function ButtonAvatar(props: { href: string }) {
-	// component logic
 
-	// component layout
-	return (
-		<Link href={props.href} className="avatar btn btn-circle btn-sm online">
-			<MdPerson className="text-xl" />
-		</Link>
-	);
-}
-
-function ButtonSearch(props: { href: string }) {
+function ButtonGoHome(props: { href: string }) {
 	// component logic
 
 	// component layout
 	return (
 		<Link href={props.href} className="btn btn-square btn-ghost btn-sm">
-			<MdSearch className="text-xl" />
+			<MdArrowBackIosNew className="text-xl" />
 		</Link>
 	);
 }
@@ -60,7 +49,7 @@ function DropdownMenu(props: {
 
 	// component layout
 	return (
-		<div className="dropdown-end dropdown">
+		<div className="dropdown dropdown-end">
 			<label tabIndex={0} className="btn btn-square btn-ghost btn-sm">
 				<MdMoreVert className="text-xl" />
 			</label>
