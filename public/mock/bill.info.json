@@ -1,0 +1,16 @@
+{
+	"id": "chat1",
+	"members": ["user1", "user2", "user3", "user4"],
+	"balance": {
+		"2023-09": {
+			"user1": 122.9,
+			"user2": 54.0,
+			"user3": 35.0,
+			"user4": 105.0
+		}
+	},
+	"timestampCreated": "2023-09-01T09:15:00.000Z",
+	"timestampUpdated": "2023-09-11T17:30:00.000Z",
+	"timestampValidTo": "2023-09-30T23:59:59.999Z",
+	"title": "Shared Expenses"
+}

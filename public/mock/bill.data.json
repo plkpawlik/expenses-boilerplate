@@ -1,0 +1,116 @@
+{
+	"id": "chat1",
+	"stats": [],
+	"posts": [
+		{
+			"timestampCreated": "2023-09-01T09:15:00.000Z",
+			"userIDBelongsTo": "user1",
+			"userIDCreatedBy": "user2",
+			"post": {
+				"expenseCost": 50.75,
+				"expenseName": "Grocery Shopping",
+				"expenseType": "Food",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-01T14:30:00.000Z",
+			"userIDBelongsTo": "user2",
+			"userIDCreatedBy": "user3",
+			"post": {
+				"expenseCost": 35.25,
+				"expenseName": "Electricity Bill",
+				"expenseType": "Bills",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-03T16:45:00.000Z",
+			"userIDBelongsTo": "user3",
+			"userIDCreatedBy": "user4",
+			"post": {
+				"expenseCost": 22.5,
+				"expenseName": "Concert Ticket",
+				"expenseType": "Entertainment",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-03T11:00:00.000Z",
+			"userIDBelongsTo": "user4",
+			"userIDCreatedBy": "user1",
+			"post": {
+				"expenseCost": 45.0,
+				"expenseName": "Fuel",
+				"expenseType": "Transport",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-06T13:45:00.000Z",
+			"userIDBelongsTo": "user1",
+			"userIDCreatedBy": "user3",
+			"post": {
+				"expenseCost": 28.9,
+				"expenseName": "Cosmetics",
+				"expenseType": "Shopping",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-06T10:20:00.000Z",
+			"userIDBelongsTo": "user2",
+			"userIDCreatedBy": "user4",
+			"post": {
+				"expenseCost": 18.75,
+				"expenseName": "Restaurant Lunch",
+				"expenseType": "Food",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-08T15:10:00.000Z",
+			"userIDBelongsTo": "user3",
+			"userIDCreatedBy": "user1",
+			"post": {
+				"expenseCost": 12.5,
+				"expenseName": "Public Transport Tickets",
+				"expenseType": "Transport",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-08T12:55:00.000Z",
+			"userIDBelongsTo": "user4",
+			"userIDCreatedBy": "user2",
+			"post": {
+				"expenseCost": 60.0,
+				"expenseName": "Gaming Console",
+				"expenseType": "Entertainment",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-10T14:00:00.000Z",
+			"userIDBelongsTo": "user1",
+			"userIDCreatedBy": "user4",
+			"post": {
+				"expenseCost": 42.25,
+				"expenseName": "Doctor's Fees",
+				"expenseType": "Health",
+				"type": "expense"
+			}
+		},
+		{
+			"timestampCreated": "2023-09-11T17:30:00.000Z",
+			"userIDBelongsTo": "user2",
+			"userIDCreatedBy": "user3",
+			"post": {
+				"expenseCost": 23.8,
+				"expenseName": "Cable TV Bill",
+				"expenseType": "Bills",
+				"type": "expense"
+			}
+		}
+	]
+}

@@ -4,8 +4,8 @@ export interface BillPost {
 	userIDCreatedBy: string;
 	post: {
 		expenseCost: number;
-		expenseName: number;
-		expenseType: number;
+		expenseName: string;
+		expenseType: string;
 		type: "expense";
 	};
 }
