@@ -1,18 +1,25 @@
 // @next
 import Link from "next/link";
 
+// @node
+import { useRouter } from "next/navigation";
+
 // @icon
 import { IconType } from "react-icons";
 import { MdArrowBackIosNew, MdBarChart, MdMoreVert, MdQueryStats } from "react-icons/md";
 
 export function Header() {
+	// component hooks
+	const router = useRouter();
+
 	// component logic
+	const goBack = router.back;
 
 	// component layout
 	return (
 		<header className="navbar flex-nowrap justify-between gap-2">
 			<div className="flex flex-nowrap gap-2">
-				<ButtonGoHome href="/home/ledgers" />
+				<ButtonGoBack action={goBack} />
 				<span className="text-lg">Chat</span>
 			</div>
 			<nav className="flex flex-nowrap gap-2">
@@ -27,14 +34,18 @@ export function Header() {
 	);
 }
 
-function ButtonGoHome(props: { href: string }) {
+function ButtonGoBack(props: { action(): void }) {
 	// component logic
 
 	// component layout
 	return (
-		<Link href={props.href} className="btn btn-square btn-ghost btn-sm">
+		<button
+			className="btn btn-square btn-ghost btn-sm"
+			onClick={props.action}
+			type="button"
+		>
 			<MdArrowBackIosNew className="text-xl" />
-		</Link>
+		</button>
 	);
 }
 
