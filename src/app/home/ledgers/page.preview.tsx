@@ -14,6 +14,7 @@ import { BillInfo } from "@/types/bill.info";
 
 export function Preview(props: { bills: BillInfo[] }) {
 	// component logic
+	const href = (bill: BillInfo): string => `/chat/${bill.id}/ledger`;
 	const label = (members: number): string => {
 		if (members === 1) return "Only you";
 		if (members === 2) return "You and someone else";
@@ -27,7 +28,7 @@ export function Preview(props: { bills: BillInfo[] }) {
 			{props.bills.map((bill) => (
 				<Link
 					key={bill.id}
-					href="#"
+					href={href(bill)}
 					className="btn btn-ghost join-item flex-1 flex-nowrap gap-2 p-2"
 				>
 					<PreviewAvatar bill={bill} />

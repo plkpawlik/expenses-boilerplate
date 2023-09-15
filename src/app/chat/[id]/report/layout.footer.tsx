@@ -1,5 +1,7 @@
 // @next
 import Link from "next/link";
+
+// @icon
 import { MdPictureAsPdf } from "react-icons/md";
 
 export function Footer() {
